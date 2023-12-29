@@ -1,0 +1,57 @@
+{
+    "type": "AdaptiveCard",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.5",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Resumen de la conversación",
+            "spacing": "None",
+            "wrap": true,
+            "horizontalAlignment": "Left",
+            "fontType": "Default",
+            "size": "Medium",
+            "weight": "Default",
+            "color": "Default",
+            "style": "heading",
+            "isSubtle": false
+        },
+        {
+            "type": "TextBlock",
+            "text": "${summary}",
+            "spacing": "None",
+            "wrap": true,
+            "horizontalAlignment": "Left",
+            "fontType": "Default",
+            "size": "Default",
+            "style": "default",
+            "id": "summary"
+        },
+        {
+            "type": "Input.Text",
+            "placeholder": "Por favor ingrese sus comentarios",
+            "label": "Comentarios",
+            "id": "comments",
+            "isMultiline": true,
+            "separator": true
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Escalar",
+                    "data": {
+                        "msteams": {
+                          "type": "invoke",
+                          "value": {
+                            "type": "task/fetch",
+                            "commandId": "escalar"
+                          }
+                        }
+                      }
+                }
+            ]
+        }
+    ]
+}

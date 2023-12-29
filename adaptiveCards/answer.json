@@ -1,0 +1,66 @@
+{
+    "type": "AdaptiveCard",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.5",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "${answer}",
+            "spacing": "None",
+            "wrap": true,
+            "horizontalAlignment": "Left",
+            "fontType": "Default",
+            "size": "Default",
+            "weight": "Lighter",
+            "color": "Default"
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "ActionSet",
+                            "actions": [
+                                {
+                                    "type": "Action.Submit",
+                                    "title": "",
+                                    "verb": "like",
+                                    "iconUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAcVJREFUOE+tlEvLQVEUht/NCEUu/0CYGBhISTI0kqHMmTMljBi6ZEAuM/IDmBhSLr9AUcrIpeQylMv52vuLzjl8X0fsyd7tvdfTetd6W4TjOA4S1+VyQblcRiaTQTabRSAQACFEEE2kAiksl8uh3W4zEN2bzSb0ev37QD6sWq1is9mgWCyiVqtBo9G8BxTDzGYzy/RwOCCVSkEul0sHimEWiwWr1QrhcBjJZBIOh+Op+n/W8BWMRo/HY9YQKl0sl76/BJ5OJxQKBXQ6HRZIM7sv2oh4PA6TyQSZTPa4t1qtiEQiIKVSiTsej4+H6/WK0WiE/X6Per0ugN0z7PV6T1Kn0ymoA4nX62VAtVrNPul0Ovj9fvh8PqhUKokOBfr9Pus8AyYSCbhcLsnB4o80s3Q6DaVS+R3gdrtFKBRCLBb7DnAwGCCfz6NSqXwO5MuNRqOfA/lyqdE/bgpfrlar/QV2u11B46iRnU4ngsEg3G43FArFSwc8ySUEZLfbcbfb7RFAz4vFAsPhEK1WC5PJBDab7SX0fD5juVyi0WjAbrczxr/zkMLX6zXm8zlorWazmSBTg8EAj8cDo9H4GLSSB6xU138d+AMjkh5xXELB/wAAAABJRU5ErkJggg=="
+                                },
+                                {
+                                    "type": "Action.Submit",
+                                    "title": "",
+                                    "verb": "dislike",
+                                    "iconUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAeBJREFUOE+1lLuvaUEUxr/tESUSiUclkZD4CzwSSg2dRigkHtGIR0mF0Ak9vfgH9CIiRKHQIBqFyiMkqOw5mTm5O3Zs4Z5z7yS7WTPzW9+31trDEUII/uHi/huQCl2v1+j3+9jtdiLNVqsVOp0OFosFBoMBMpnspSdB4XQ6RSQSgclkglKpfLpwu90wm81gt9sRCoXgcrlgNptFcJqIAam6RqOB6/WKYrEIjuMkFVDoYDBAp9PBaDTCYrEQnfP5fN/A4/GIZDKJbDYLt9v9oxYNh0NUKpVv4GQyQa1WQ7vdZrX6yRKAPM8TapeuXC730u67JALwcDiQ39qlyQTgeDwmv7UrAtbrdfKuu+/sioDBYJCk02l4PJ5P7rEzl8sFvV6PfdvtlsXO5zPUajW4aDRK6NzZbLYnoNfrhcPhEMXp7MViMWi1WjidTsjlcmGfATebDWk2m5jP58IGz/NYrVaoVqsIh8NCnMISiQT8fj8ymQxUKtWTCMnH4XQ6IR6P47EUf2CBQICNl0KhkCyRJJAOerlcRqvVgtFoZL8YVfYORjM8Ae/3O0qlEjQaDVOyXC4/hkkCH+3q9fq/gkkC9/s9awS11+12P7L5WMwny/Qpo6B8Po9CoYBUKvWyAVJd+QLRvg8pSLnQ7AAAAABJRU5ErkJggg=="
+                                }
+                            ],
+                            "spacing": "None",
+                            "horizontalAlignment": "Right"
+                        }
+                    ],
+                    "width": "stretch"
+                },
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${count} of ${maxRounds} responses\nAI-generated content may be incorrect",
+                            "spacing": "None",
+                            "horizontalAlignment": "Right",
+                            "style": "default",
+                            "fontType": "Default",
+                            "size": "Small",
+                            "color": "Default",
+                            "isSubtle": true
+                        }
+                    ],
+                    "verticalContentAlignment": "Bottom"
+                }
+            ]
+        }
+    ]
+  }
